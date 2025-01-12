@@ -1,0 +1,330 @@
+:root {
+  --color1: #fffcfc;
+  --color2: #fff2dc;
+  --color3: #ffdda3;
+  --color4: #b89355;
+  --color5: #fc9d18;
+  --color6: #f17d1e;
+  --color7: #78533d;
+  --color8: #6c3719;
+  --color9: #3b2112;
+  --color10: #1b0d03;
+}
+
+.btTheme {
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  right: 30px;
+  bottom: 5px;
+  font-size: 5dvw;
+  color: var(--color10);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.btTheme:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.description {
+  display: none;
+  color: var(--color1);
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  left: 30%;
+}
+.description .triangle {
+  clip-path: polygon(100% 0%, 90% 15%, 60% 30%, 55% 35%, 50% 50%, 55% 65%, 60% 70%, 90% 85%, 100% 100%);
+  height: 2.5dvw;
+  width: 2dvw;
+  background-color: var(--color8);
+  transform: rotate(90deg);
+}
+.description .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color8);
+  width: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: -5px;
+}
+.description .box p {
+  border-radius: 12px;
+  width: 90%;
+  height: 85%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: var(--color2);
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+main {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer {
+  background-color: var(--color9);
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-evenly;
+}
+footer nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color1);
+  font-weight: 600;
+  font-size: 1.5vw;
+}
+footer nav .btnSocialMedia {
+  display: flex;
+  padding: 12px;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+footer nav .btnSocialMedia:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+footer nav .btnSocialMedia p {
+  margin-left: 1dvw;
+}
+footer nav img {
+  width: 3vw;
+}
+footer nav .logo {
+  width: 6vw;
+  border-radius: 50%;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+footer nav .logo:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  box-shadow: 10px 10px 0 0 var(--color10);
+}
+footer .copyright {
+  height: 5dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color1);
+  background-color: var(--color10);
+}
+
+.container {
+  scroll-snap-align: end;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: none;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--color10);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color8);
+  border-radius: 12px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30dvw;
+  height: 90dvh;
+  border-radius: 2dvw;
+  background-color: var(--color6);
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 2dvw;
+}
+.form form input,
+.form form .logo {
+  background-color: var(--color3);
+  font-weight: 600;
+  letter-spacing: 0.1vw;
+}
+.form form input::-webkit-input-placeholder,
+.form form .logo::-webkit-input-placeholder {
+  color: var(--color4);
+}
+.form form .logo {
+  width: 12dvw;
+  height: 12dvw;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 800;
+  color: var(--color4);
+  font-size: 2.5dvw;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.form form .logo:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  box-shadow: 10px 10px 0 0 var(--color10);
+}
+.form form input {
+  width: 100%;
+  border-radius: 1dvw;
+  height: 3.3dvw;
+  padding: 1dvw;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.form form input:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  box-shadow: 10px 10px 0 0 var(--color10);
+}
+.form form input:focus {
+  border: 2px solid var(--color8);
+}
+.form form .quant {
+  display: flex;
+  justify-content: space-between;
+}
+.form form .quant select {
+  border: none;
+  width: 45%;
+  font-size: 1.5vw;
+  color: var(--color1);
+  padding: 0 0.5vw;
+  background-color: transparent;
+}
+.form form .quant select:focus {
+  background-color: var(--color8);
+  border-radius: 1dvw;
+}
+.form form .quant select option {
+  background-color: var(--color8);
+  color: var(--color1);
+}
+.form form .quant select option:hover {
+  background-color: red;
+}
+.form form .quant input {
+  width: 45%;
+}
+.form form .buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form form .buttons a {
+  color: var(--color1);
+  font-weight: 700;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.form form .buttons a:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.form form .buttons input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color9);
+  color: var(--color1);
+  font-weight: 700;
+  font-size: 1.3dvw;
+  width: 50%;
+}
+
+.container2 {
+  width: 50dvw;
+  height: 90dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color3);
+  border-radius: 5dvh;
+  padding: 20px;
+}
+.container2 .preview {
+  width: 90%;
+  height: 80%;
+  overflow: hidden;
+}
+.container2 .preview .carrosel {
+  width: 400%;
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+.container2 .preview .carrosel .products {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container2 .preview .carrosel .products img {
+  width: 60%;
+  height: 100%;
+}
+.container2 .text {
+  font-size: 2.2dvw;
+  text-align: center;
+  color: var(--color8);
+  height: 10dvw;
+  font-weight: 800;
+}
+.container2 .points {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+}
+.container2 .points .point {
+  transition: width 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.375);
+  border-radius: 50%;
+  border: 6px solid var(--color8);
+  height: 22px;
+  width: 22px;
+}
+.container2 .points .point:hover {
+  cursor: pointer;
+  background-color: var(--color9);
+  border: 6px solid var(--color9);
+}
+.container2 .points .point.active {
+  width: 40px;
+  border-radius: 12px;
+  background-color: var(--color8);
+}
+.container2 .points .point.active:hover {
+  cursor: pointer;
+  background-color: var(--color9);
+  border: 6px solid var(--color9);
+}
+
+/*# sourceMappingURL=style.css.map */
