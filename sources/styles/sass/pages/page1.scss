@@ -46,32 +46,6 @@
                 border: 2px solid var(--color8);
             }
         }
-        .quant {
-            display: flex;
-            justify-content: space-between;
-            select {
-                border: none;
-                width: 45%;
-                font-size: 1.5vw;
-                color: var(--color1);
-                padding: 0 .5vw;
-                background-color: transparent;
-                &:focus{
-                    background-color: var(--color8);
-                    border-radius: 1dvw;
-                }
-                option{
-                    background-color: var(--color8);
-                    color: var(--color1);
-                    &:hover{
-                        background-color: red;
-                    }
-                }
-            }
-            input{
-                width: 45%;
-            }
-        }
         .buttons {
             width: 100%;
             display: flex;

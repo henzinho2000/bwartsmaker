@@ -4,9 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Create a Pesonalized BOX</title>
-        <link rel="stylesheet" href="./sources/styles/css/reset.css" />
-        <link rel="stylesheet" href="./sources/styles/css/style.css" />
-        <script src="./sources/js/script.js" type="module"  defer ></script>
+        <link rel="stylesheet" href="../sources/styles/css/reset.css" />
+        <link rel="stylesheet" href="../sources/styles/css/style.css" />
+        <script src="../sources/js/script.js" type="module"  defer></script>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -20,7 +20,7 @@
         />
         <link
             rel="shortcut icon"
-            href="./sources/styles/images/logo.jpg"
+            href="../sources/styles/images/logo.jpg"
             type="image/x-icon"
         />
     </head>
@@ -40,21 +40,7 @@
                     <div class="logo elements" id="logo">
                         <h2>SUA<br />LOGO</h2>
                     </div>
-                    <div class="quant">
-                        <select name="$modelo" id="modelo" placeholder="modelo"class="elements">
-                            <option value="pequeno">grande</option>
-                            <option value="pequeno">pequeno</option>
-                        </select>
-                        <input
-                            id="quantidade"
-                            type="number"
-                            inputmode="numeric"
-                            placeholder="quant."
-                            name="$quantidade"
-                            min="1"
-                            class="elements"
-                        />
-                    </div>
+                    
                     <input type="text" name="$pix" id="pix" class="elements" placeholder="pix" />
                     <input
                         type="text"
@@ -67,6 +53,7 @@
                         type="text"
                         name="$whatsapp"
                         id="whatsapp"
+                        maxlength="15"
                         inputmode="numeric"
                         placeholder="whatsapp"
                         class="elements"
@@ -83,7 +70,6 @@
                         <a href="" class="button">Precisa de Ajuda?</a>
                         <input type="submit" name="submit" id="submit"/>
                     </div>
-
                     <input type="text" name="honeypot" style="display: none" />
                 </form>
             </section>
@@ -92,25 +78,25 @@
                     <div class="carrosel">
                         <div class="products">
                             <img
-                                src="./sources/styles/images/product/1.png"
+                                src="../sources/styles/images/product/1.png"
                                 alt="Imagem 1"
                             />
                         </div>
                         <div class="products">
                             <img
-                                src="./sources/styles/images/product/2.png"
+                                src="../sources/styles/images/product/2.png"
                                 alt="Imagem 2"
                             />
                         </div>
                         <div class="products">
                             <img
-                                src="./sources/styles/images/product/3.png"
+                                src="../sources/styles/images/product/3.png"
                                 alt="Imagem 3"
                             />
                         </div>
                         <div class="products">
                             <img
-                                src="./sources/styles/images/product/4.png"
+                                src="../sources/styles/images/product/4.png"
                                 alt="Imagem 4"
                             />
                         </div>
@@ -149,16 +135,16 @@
                 <a href="">
                     <img
                         class="logo"
-                        src="./sources/styles/images/logo.jpg"
+                        src="../sources/styles/images/logo.jpg"
                         alt=""
                     />
                 </a>
                 <a href="" class="btnSocialMedia">
-                    <img src="./sources/styles/images/whatsapp.png" alt="" />
+                    <img src="../sources/styles/images/whatsapp.png" alt="" />
                     <p>@bwtowercelltex</p>
                 </a>
                 <a href="" class="btnSocialMedia">
-                    <img src="./sources/styles/images/instagram.png" alt="" />
+                    <img src="../sources/styles/images/instagram.png" alt="" />
                     <p>@BWARTS_MAKER</p>
                 </a>
             </nav>
