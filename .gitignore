@@ -1,2 +1,8 @@
-# remove the node modules
+#node_modules
 /node_modules
+
+#arquivo .env
+.env
+
+#tirar o map
+/sources/styles/css/*.css.map
