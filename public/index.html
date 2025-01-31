@@ -6,7 +6,11 @@
         <title>Create a Pesonalized BOX</title>
         <link rel="stylesheet" href="../sources/styles/css/reset.css" />
         <link rel="stylesheet" href="../sources/styles/css/style.css" />
-        <script src="../sources/js/script.js" type="module"  defer></script>
+        <script
+            src="../sources/js/page 1/script.js"
+            type="module"
+            defer
+        ></script>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -28,27 +32,50 @@
         <main class="container">
             <section class="form">
                 <form
-                    action="https://api.staticforms.xyz/submit"
-                    method="post"
                     autocomplete="off"
+                    method="post"
                 >
-                    <input
-                        type="hidden"
-                        name="accessKey"
-                        value="8b8321ed-80a6-41bd-8a7a-adaa0a1d75d2"
-                    />
-                    <div class="logo elements" id="logo">
+                    <div class="logo" id="uploadLogo">
                         <h2>SUA<br />LOGO</h2>
                     </div>
-                    
-                    <input type="text" name="$pix" id="pix" class="elements" placeholder="pix" />
+                    <input
+                        type="file"
+                        id="imageInput"
+                        name="upload"
+                        style="display: none"
+                        accept="image/*"
+                    />
+
                     <input
                         type="text"
-                        name="$instagram"
-                        id="instagram"
-                        placeholder="instagram"
+                        name="$nome_empresa"
+                        id="name"
+                        maxlength="200"
                         class="elements"
+                        placeholder="nome da Empresa"
+                        required
                     />
+
+                    <input
+                        type="text"
+                        name="$pix"
+                        id="pix"
+                        maxlength="100"
+                        class="elements"
+                        placeholder="pix"
+                        required
+                    />
+                    <div class="elements" id="instagram">
+                        <p>@</p>
+                        <div class="line"></div>
+                        <input
+                            maxlength="100"
+                            type="text"
+                            name="$instagram"
+                            placeholder="instagram"
+                            required
+                        />
+                    </div>
                     <input
                         type="text"
                         name="$whatsapp"
@@ -57,20 +84,26 @@
                         inputmode="numeric"
                         placeholder="whatsapp"
                         class="elements"
+                        required
                     />
                     <input
                         type="text"
                         name="$catalogo"
+                        maxlength="300"
                         id="catalogo"
                         placeholder="catalogo/agenda"
                         class="elements"
+                        required
                     />
 
                     <div class="buttons">
                         <a href="" class="button">Precisa de Ajuda?</a>
-                        <input type="submit" name="submit" id="submit"/>
+                        <button
+                            type="submit"
+                            class="button"
+                            id="submit"
+                        >Continuar</button>
                     </div>
-                    <input type="text" name="honeypot" style="display: none" />
                 </form>
             </section>
             <section class="container2">
@@ -121,12 +154,7 @@
             <div class="description">
                 <div class="triangle"></div>
                 <div class="box">
-                    <p id="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Eos deleniti culpa enim iste quos obcaecati cumque
-                        animi est? Quod possimus porro aspernatur quisquam error
-                        cum ex id deleniti placeat ea.
-                    </p>
+                    <p id="description"></p>
                 </div>
             </div>
         </main>

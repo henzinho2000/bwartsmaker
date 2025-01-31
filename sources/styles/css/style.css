@@ -1,8 +1,7 @@
-@charset "UTF-8";
 :root {
   --color1: #fffcfc;
   --color2: #fff2dc;
-  --color3: #ffdda3;
+  --color3: #ffcf7d;
   --color4: #b89355;
   --color5: #fc9d18;
   --color6: #f17d1e;
@@ -179,15 +178,23 @@ footer .copyright {
 .form form .logo {
   width: 12dvw;
   height: 12dvw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 10px solid var(--color3);
   text-align: center;
   font-weight: 800;
   color: var(--color4);
   font-size: 2.5dvw;
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.form form .logo:hover {
+  border-radius: 20px;
 }
 .form form .logo:hover {
   transform: translateY(-5px);
@@ -209,6 +216,42 @@ footer .copyright {
 .form form input:focus {
   border: 2px solid var(--color8);
 }
+.form form #instagram {
+  width: 100%;
+  border-radius: 1dvw;
+  height: 3.3dvw;
+  padding: 1dvw;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color3);
+}
+.form form #instagram:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  box-shadow: 10px 10px 0 0 var(--color10);
+}
+.form form #instagram .line {
+  width: 2px;
+  height: 100%;
+  background-color: var(--color8);
+}
+.form form #instagram input {
+  width: 80%;
+  padding: 0;
+}
+.form form #instagram input:hover {
+  transform: translateY(0px);
+  cursor: pointer;
+  box-shadow: none;
+}
+.form form #instagram input:focus {
+  border: none;
+}
+.form form #instagram input:focus #intagram {
+  border: 2px solid var(--color8);
+}
 .form form .buttons {
   width: 100%;
   display: flex;
@@ -224,7 +267,8 @@ footer .copyright {
   transform: translateY(-5px);
   cursor: pointer;
 }
-.form form .buttons input {
+.form form .buttons #submit {
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,6 +277,13 @@ footer .copyright {
   font-weight: 700;
   font-size: 1.3dvw;
   width: 50%;
+  height: 3dvw;
+  border-radius: 20px;
+}
+.form form .buttons #submit:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  box-shadow: 10px 10px 0 0 var(--color10);
 }
 
 .container2 {
@@ -270,7 +321,7 @@ footer .copyright {
 .container2 .text {
   font-size: 2.2dvw;
   text-align: center;
-  color: var(--color8);
+  color: #6c3719;
   height: 10dvw;
   font-weight: 800;
 }
@@ -282,7 +333,7 @@ footer .copyright {
 .container2 .points .point {
   transition: width 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.375);
   border-radius: 50%;
-  border: 6px solid var(--color8);
+  border: 6px solid #6c3719;
   height: 22px;
   width: 22px;
 }
@@ -294,7 +345,7 @@ footer .copyright {
 .container2 .points .point.active {
   width: 40px;
   border-radius: 12px;
-  background-color: var(--color8);
+  background-color: #6c3719;
 }
 .container2 .points .point.active:hover {
   cursor: pointer;
@@ -302,213 +353,57 @@ footer .copyright {
   border: 6px solid var(--color9);
 }
 
-.minecraft {
+.congratulations {
   display: flex;
   align-items: center;
-  width: 100%;
   justify-content: space-around;
+  flex-direction: column;
+  width: 70dvw;
+  height: 75dvh;
 }
-.minecraft .left {
+.congratulations .text {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100dvh;
-  width: 55dvw;
-  flex-direction: column;
+  color: var(--color8);
 }
-.minecraft .left .line {
-  display: flex;
-}
-.minecraft .left .line .noView {
-  visibility: hidden;
-}
-.minecraft .right {
-  background-color: var(--color6);
-  width: 30dvw;
-  height: 95dvh;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-}
-.minecraft .right .preview {
-  width: 80%;
-  height: 25%;
-  color: var(--color3);
-  font-size: 1.2dvw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.minecraft .right .preview .image {
-  background-color: var(--color3);
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 45%;
-  height: 100%;
-}
-.minecraft .right .preview .image img {
-  width: 70%;
-}
-.minecraft .right .preview .quant {
-  margin-top: 2dvw;
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 100%;
-}
-.minecraft .right .preview .quant select {
-  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border: none;
-  width: 100%;
-  height: 3.5dvw;
-  color: var(--color1);
-  padding: 0 1dvw;
-  background-color: transparent;
-  font-size: 1.5dvw;
-  border-bottom: 2px solid var(--color1);
-}
-.minecraft .right .preview .quant select:hover {
-  transform: translateY(-5px);
-  cursor: pointer;
-}
-.minecraft .right .preview .quant select:focus {
-  border: 2px solid var(--color1);
-  border-radius: 20px;
-}
-.minecraft .right .preview .quant select option {
-  background-color: var(--color1);
-  color: red;
-  color: var(--color1);
-}
-.minecraft .right .preview .quant input {
-  height: 3.5dvw;
-  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  color: var(--color1);
-  padding: 1dvw;
-  border-radius: 20px;
-  background-color: var(--color8);
+.congratulations .text h1 {
+  text-align: center;
+  font-size: 9dvw;
   width: 100%;
 }
-.minecraft .right .preview .quant input:hover {
-  transform: translateY(-5px);
-  cursor: pointer;
-  box-shadow: 10px 10px 0 0 var(--color10);
-}
-.minecraft .right .preview .quant input::-webkit-input-placeholder {
-  color: var(--color4);
-  font-size: 1.5dvw;
-}
-.minecraft .right .preview .quant input:focus {
-  border: 2px solid var(--color1);
-}
-.minecraft .right .preview .quant #preçoUnitario {
-  width: 100%;
+.congratulations .text p {
+  font-size: 3dvw;
+  color: var(--color7);
+  width: 90%;
   text-align: justify;
 }
-.minecraft .right .button {
+.congratulations .buttons {
+  display: flex;
+  align-items: center;
+  width: 55dvw;
+  justify-content: space-around;
+}
+.congratulations .buttons img {
+  width: 3.5dvw;
+}
+.congratulations .buttons .ou {
+  width: 4dvw;
+}
+.congratulations .buttons .button {
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  width: 78%;
-  height: 10%;
-  padding: 10px;
-  border-radius: 20px;
-  display: flex;
-  color: var(--color8);
-  font-weight: 600;
-  font-size: 1.1dvw;
-  flex-direction: column;
-  background-color: var(--color3);
-}
-.minecraft .right .button:hover {
-  transform: translateY(-5px);
-  cursor: pointer;
-  box-shadow: 10px 10px 0 0 var(--color10);
-}
-.minecraft .right .button .baixo {
-  display: flex;
-  justify-content: space-between;
-}
-.minecraft .right .button .baixo .pix {
-  color: var(--color9);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 20%;
-}
-.minecraft .right .button .baixo .pix i {
-  font-size: 1.7dvw;
-}
-.minecraft .right .button .baixo .pix img {
-  width: 2dvw;
-}
-.minecraft .right .button .baixo .seta {
-  clip-path: polygon(50% 0%, 50% 100%, 0% 50%);
-  background-color: var(--color8);
-  transform: rotate(180deg);
-  margin-top: -2%;
-  width: 10%;
-  height: 70%;
-}
-.minecraft .right .pagament {
-  background-color: var(--color3);
-  width: 78%;
-  padding: 10px;
-  border-radius: 20px;
-}
-.minecraft .right .pagament p {
-  font-weight: 700;
-  color: var(--color8);
-}
-.minecraft .right .pagament .lines {
-  display: flex;
-  justify-content: space-between;
-}
-.minecraft .right .pagament .lines p {
-  color: var(--color7);
-}
-.minecraft .right .pagament .line {
-  width: 100%;
-  height: 2px;
-  background-color: var(--color7);
-}
-.minecraft .right .pagament .subTotal {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.5dvw;
-}
-.minecraft .right .prosseguir {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 80%;
-}
-.minecraft .right .prosseguir .total {
-  display: flex;
-  align-items: start;
-  color: var(--color8);
-  font-weight: 700;
-  width: 45%;
-}
-.minecraft .right .prosseguir .total #total {
+  justify-content: space-evenly;
+  background-color: var(--color6);
+  color: white;
+  width: 18dvw;
+  height: 6dvw;
+  border-radius: 30px;
   font-size: 1.8dvw;
-  color: var(--color1);
 }
-.minecraft .right .prosseguir .finalSubmit {
-  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  width: 45%;
-  background-color: var(--color8);
-  color: var(--color1);
-  height: 110%;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.minecraft .right .prosseguir .finalSubmit:hover {
+.congratulations .buttons .button:hover {
   transform: translateY(-5px);
   cursor: pointer;
   box-shadow: 10px 10px 0 0 var(--color10);

@@ -9,7 +9,9 @@ function gbForm() {
 
                 descriptionDiv.style.display = "flex";
                 const obj = {
-                    logo: "Clique aqui para colocar a imagem da logo da sua empresa",
+                    name: "Digite aqui o nome da sua empresa",
+
+                    uploadLogo: "Clique aqui para colocar a imagem da logo da sua empresa",
 
                     modelo: "Selecione o modelo do seu produto, tendo dois modelos: grande e pequeno ",
 
@@ -17,7 +19,7 @@ function gbForm() {
 
                     pix: "Coloque aqui o número do seu pix",
 
-                    instagram: "Coloque o seu arroba profissional @conta_Instagram",
+                    instagram: "Coloque a sua conta profissional do instagram ex: @conta_Instagram",
 
                     whatsapp: "Coloque o seu número de whatsapp \n (xx) xxxxx-xxxx \nou \n (xx) xxxx-xxxx",
 

@@ -1,0 +1,50 @@
+.congratulations{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      width: 70dvw;
+      height: 75dvh;
+      .text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--color8);
+            h1{
+                  text-align: center;
+                  font-size: 9dvw;
+                  width: 100%;
+            }
+            p{
+                  font-size: 3dvw;
+                  color: var(--color7);
+                  width: 90%;
+                  text-align: justify;
+            }
+      }
+      .buttons{
+            display: flex;
+            align-items: center;
+            width: 55dvw;
+            justify-content: space-around;
+            img{
+                  width: 3.5dvw;
+            }
+            .ou{
+                  width: 4dvw;
+            }
+            .button{
+                  @include btn;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-evenly;
+                  background-color: var(--color6);
+                  color: white;
+                  width: 18dvw;
+                  height: 6dvw;
+                  border-radius: 30px;
+                  font-size: 1.8dvw;
+            }
+      }
+}
